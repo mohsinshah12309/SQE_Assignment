@@ -1,0 +1,6 @@
+item_id,quantity,state_code,coupon_code,expected_base_price,expected_tier_discount,expected_coupon_discount,expected_tax,expected_grand_total
+ITEM001,1,NY,SAVE10,1200.0,240.0,96.0,76.68,940.68
+ITEM002,2,FL,NONE,50.0,0.0,0.0,3.0,53.0
+ITEM003,4,TX,SAVE20,300.0,30.0,54.0,13.5,229.5
+ITEM004,2,CA,SAVE10,600.0,90.0,51.0,33.28,492.28
+ITEM001,2,EXEMPT,NONE,2400.0,480.0,0.0,0.0,1920.0
