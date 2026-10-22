@@ -39,6 +39,8 @@ class UserManager:
             return False
         if not re.search(r"[A-Z]", password):
             return False
+        if not re.search(r"[a-z]", password):
+            return False
         if not re.search(r"[!@#$%^&*()\-_]", password):
             return False
         return True
@@ -50,7 +52,7 @@ class UserManager:
         """
         if not isinstance(email, str):
             return False
-        pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+        pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$"
         return bool(re.match(pattern, email))
 
     def validate_age(self, age: int) -> bool:
